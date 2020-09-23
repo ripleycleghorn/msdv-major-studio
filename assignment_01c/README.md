@@ -19,11 +19,12 @@
 * Who else is doing something similar?
 
 
-## Project Answers
+## Project Answers - considering mockup option 2
 1. This visualization will be be more informative than explorative. It will allow users to learn the basics about a *quipu*, the ancient Incan counting device, by looking up-close at one specific *quipu* in the Smithsonian collection. This device used chords and their color and texture properties, as well as knots, to collect information and keep records. The visualization will provide a quantitative look at this object; for example, how many knots it has, how many chords, what color, etc.
 2. I'm hoping that the takeaway after looking at this  visualization is an appreciation for this system of information gathering and record keeping, which to me, managed to store quite a lot of information in a relatively compact space.
 
-    1. The visualization methods that will be used are varied. The main visual aspect will be the photo of the *quipu*, which I decided is the best representation of this device. Additionally, I will try to add a dendogram style visualization to represent the basic components&mdash;the knots and chords. Although the photo is the most realistic, it's hard to see the details of each chord. Therefore, I'm hoping the dendogram will help convey the *amount* of information stored in the *quipu*. Additionally, there will probably be a bar chart describing the number of chords by color. I will also include a few inforgraphic style diagrams to convey the method of counting used in *quipu*.
+    1. The visualization methods that will be used are varied. The main visual aspect will be a dendogram of the *quipu*, which I decided is the best representation of the basic components of this device. Additionally, I will add photos of the *quipu* from the Smithsonian collection at the bottom of the page. Although the photo is the most realistic representation, it's hard to see the details of each chord. Therefore, I'm hoping the dendogram will help convey the *amount* of information stored in the *quipu*. I will also include a few inforgraphic style diagrams to convey the method of counting used in *quipu*.
+    2. Color in the visualization will be used to represent the actual color of the chords. Length and texture of the chords won't be conveyed in the dendogram, given that I don't include them to be part of the *basic* components.
 3. I'm targeting people who have never heard of or seen a *quipu* before, as this will serve as an introduction to one.
 4. The end product will be used digitally, and will be static. In the future, it would be interesting to make it interactive such that a person can click on a specific part of the dendogram and the subchords are shown up-close.
 5. I'll be publishing it online as a website.
