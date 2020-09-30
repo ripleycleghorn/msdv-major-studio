@@ -25,11 +25,12 @@
     background: #f0efeb;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
+    hyphens: auto;
  }
  .container div:nth-child(3) {
    grid-area: knot;
    background: #f0efeb;
-   padding-top: 3em;
+   padding-top: 2em;
 }
  .container div:nth-child(5) {
    background: #f0efeb;
@@ -38,6 +39,7 @@
    padding-right: 1em;
    font-family: 'Open Sans', sans-serif;
    font-size: 13px;
+   hyphens: auto;
 }
 .container div:nth-child(6) {
    background: black;
