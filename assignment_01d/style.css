@@ -1,0 +1,40 @@
+.container {
+    height: 2000;
+    width: 95vw;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-areas: "title title title"
+                        "desc knot knot"
+                         "main main main"
+                         "box2 box2 box2"
+                         "footer footer footer";
+    grid-template-rows: .5fr 1fr 3fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+ .container h1 {
+    grid-area: title;
+    color: #457b9d;
+    /* background: #eddcd2; */
+ }
+ .container div:nth-child(2) {
+    grid-area: desc;
+    background: #f0efeb;
+ }
+ .container div:nth-child(3) {
+   grid-area: knot;
+   background: #f0efeb;
+}
+ .container div:nth-child(5) {
+   grid-area: box2;
+}
+ .container main {
+    grid-area: main;
+ }
+ .container footer {
+    grid-area: footer;
+ }
+ body {
+    background: #f0efeb;
+    color: #734022;
+    text-align: left;
+ }
