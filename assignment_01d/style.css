@@ -6,10 +6,10 @@
     grid-template-areas: "title title title"
                         "desc knot knot"
                          "main main main"
-                         "conc img box4"
+                         "conc img img"
                          "footer footer footer";
-    grid-template-rows: .5fr 1fr 3fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 3fr 1fr .75fr;
+    grid-template-columns: 1.6fr 1fr 1fr;
  }
  .container h1 {
     grid-area: title;
@@ -29,32 +29,37 @@
  .container div:nth-child(3) {
    grid-area: knot;
    background: #f0efeb;
+   padding-top: 3em;
 }
  .container div:nth-child(5) {
    background: #f0efeb;
    grid-area: conc;
    padding-left: 1em;
+   padding-right: 1em;
    font-family: 'Open Sans', sans-serif;
    font-size: 13px;
 }
 .container div:nth-child(6) {
-   background: #f0efeb;
+   background: black;
    grid-area: img;
-   /* padding-left: 70px; */
+   margin: auto;
+   padding: 1em;
 }
-.container div:nth-child(7) {
+/* .container div:nth-child(7) {
    background: #f0efeb;
    grid-area: box4;
-}
+} */
  .container main {
    background: #f0efeb;
     grid-area: main;
  }
  .container footer {
    background: #f0efeb;
-    grid-area: footer;
-    padding-left: 1em;
-    padding-top: 1em;
+   grid-area: footer;
+   padding-left: 1em;
+   padding-top: 1em;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 13px;
  }
  body {
     background: black;
