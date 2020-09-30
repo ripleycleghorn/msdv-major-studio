@@ -14,27 +14,38 @@
  .container h1 {
     grid-area: title;
     color: #457b9d;
-    /* background: #eddcd2; */
+    font-family: 'Open Sans', sans-serif;
  }
+ .container h3 {
+   font-family: 'Open Sans', sans-serif;
+}
  .container div:nth-child(2) {
     grid-area: desc;
+    padding-left: 1em;
     background: #f0efeb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
  }
  .container div:nth-child(3) {
    grid-area: knot;
    background: #f0efeb;
 }
  .container div:nth-child(5) {
+   background: #f0efeb;
    grid-area: box2;
+   padding-left: 1em;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 13px;
 }
  .container main {
+   background: #f0efeb;
     grid-area: main;
  }
  .container footer {
+   background: #f0efeb;
     grid-area: footer;
  }
  body {
-    background: #f0efeb;
-    color: #734022;
+    background: black;
     text-align: left;
  }
