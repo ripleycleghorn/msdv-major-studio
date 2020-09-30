@@ -30,7 +30,7 @@
  .container div:nth-child(3) {
    grid-area: knot;
    background: #f0efeb;
-   padding-top: 2em;
+   padding-top: 1em;
 }
  .container div:nth-child(5) {
    background: #f0efeb;
