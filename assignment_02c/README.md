@@ -30,7 +30,6 @@
 Here is the prototype I have so far:
 
 <video controls>
-  <source src="prototype.mov" type="video/mov">
-  <source src="movie.ogg" type="video/ogg">
+  <source src="prototype.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
