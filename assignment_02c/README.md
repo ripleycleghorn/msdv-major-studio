@@ -25,11 +25,4 @@
 2. Because this is a qualitative visualization, I decided to go with text as my method. I had created a prototype first based on images, but then came to the conclusion that it didn't tell the story I was aiming to tell. So I switched to text as the main method. 
 3. The dataset I used were the images of objects belonging to Sally Ride as well as their descriptions, which I downloaded using the API. The main use of the visualization is to be able to hover over keywords in the text and see the images associated. 
     1. The dataset is not complete, because not all objects were part of the API, but I decided that was okay since this was just a small representation of the objects. I also supplemented with a few sources from NASA and from the Smithsonian outside of the API. In total I have about 20 objects.
-4. Something I haven't included in the prototype but will include in the final visualization is the category of each item. I will assign a category using color. 
-
-Here is the prototype I have so far:
-
-<video controls>
-  <source src="prototype.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+4. Something I haven't included in the prototype but will include in the final visualization is the category of each item. I will assign a category using color.
