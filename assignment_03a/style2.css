@@ -1,0 +1,232 @@
+body {
+    margin: 10;
+    color: white;
+  }
+  #grid-container-1 {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "timeline text" 
+    "timeline rocket" 
+    "timeline sally"
+  }
+  #timeline {
+    background: olivedrab;
+    grid-area: timeline;
+    position: fixed;
+  }
+  #rocket {
+    background: coral;
+    grid-area: rocket;
+  }
+  #text {
+    background: #FFBD48;
+    grid-area: text;
+  }
+  #sally {
+    background: lightblue;
+    grid-area: sally;
+  }
+  #part-one {
+    background: olivedrab;
+    grid-area: p1;
+  }
+  #uni {
+    background: olivedrab;
+    grid-area: uni;
+  }
+  #ruler1 {
+    background: coral;
+    grid-area: ruler1;
+  }
+  #chem {
+    background: lightblue;
+    grid-area: chem;
+  }
+  #ruler2 {
+    background: olivedrab;
+    grid-area: ruler2;
+  }
+  #apply {
+    background: #FFBD48;
+    grid-area: apply;
+  }
+  #news {
+    background: lightblue;
+    grid-area: news;
+  }
+  #news2 {
+    background: olivedrab;
+    grid-area: news2;
+  }
+  /* #part-two {
+    background: #FFBD48;
+    grid-area: p2;
+  }
+  #jsc {
+    background: coral;
+    grid-area: jsc;
+  }
+  #badge {
+    background: olivedrab;
+    grid-area: badge;
+  }
+  #watch {
+    background: lightblue;
+    grid-area: watch;
+  }
+  #training-text {
+    background: #FFBD48;
+    grid-area: tt;
+  }
+  #mission-sequence-test {
+    background: coral;
+    grid-area: mst;
+  }
+  #helmet {
+    background: olivedrab;
+    grid-area: helmet;
+  }
+  #pre-launch {
+    background: lightblue;
+    grid-area: pl;
+  }
+  #t-38 {
+    background: #FFBD48;
+    grid-area: t38;
+  }
+  #part-three {
+    background: coral;
+    grid-area: p3;
+  }
+  #launch {
+    background: olivedrab;
+    grid-area: launch;
+  }
+  #depart-text {
+    background: lightblue;
+    grid-area: dt;
+  }
+  #mission-text {
+    background: #FFBD48;
+    grid-area: mt;
+  }
+  #crew {
+    background: olivedrab;
+    grid-area: cw;
+  }
+  #part-four {
+    background: coral;
+    grid-area: p4;
+  }
+  #mission-goal {
+    background: lightblue;
+    grid-area: mg;
+  }
+  #palapa-medal {
+    background: #FFBD48;
+    grid-area: pm;
+  }
+  #palapa-image {
+    background: olivedrab;
+    grid-area: pi;
+  }
+  #flight-fun {
+    background: coral;
+    grid-area: ff;
+  }
+  #floating {
+    background: lightblue;
+    grid-area: float;
+  }
+  #part-five {
+    background: #FFBD48;
+    grid-area: p5;
+  }
+  #spas-text {
+    background: olivedrab;
+    grid-area: st;
+  }
+  #medallion {
+    background: coral;
+    grid-area: md;
+  }
+  #video-one {
+    background: lightblue;
+    grid-area: v1;
+  }
+  #control-deck {
+    background: #FFBD48;
+    grid-area: cd;
+  }
+  #mission-success {
+    background: olivedrab;
+    grid-area: ms;
+  }
+  #video-two {
+    background: coral;
+    grid-area: v2;
+  }
+  #ride-standing {
+    background: lightblue;
+    grid-area: rs;
+  }
+  #space {
+    background: #FFBD48;
+    grid-area: sp;
+  } */
+
+  @media (min-width: 800px) {
+    #grid-container-1 {
+      width: 100%;
+      /* height: 100vh; */
+      grid-template-rows: repeat(15, 300px);
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 1fr 1fr;
+      grid-template-areas: 
+      "timeline rocket text text text"
+      "timeline rocket sally sally sally"
+      "timeline p1 p1 p1 p1"
+      "timeline uni uni uni ."
+      "timeline ruler1 ruler1 ruler1 ruler1"
+      "timeline ruler2 ruler2 ruler2 chem"
+      "timeline apply apply . ."
+      "timeline news news news ."
+      "timeline news news news ."
+      "timeline news news news news2";
+      /* "timeline p2 p2 p2 p2"
+      "timeline jsc jsc badge badge"
+      "timeline watch watch tt tt"
+      "timeline watch watch tt tt"
+      "timeline mst mst helmet helmet"
+      "timeline . pl pl ."
+      "timeline t38 t38 t38 t38"
+      "timeline t38 t38 t38 t38"
+      "timeline p3 p3 p3 p3"
+      "timeline launch launch launch launch"
+      "timeline launch launch launch launch"
+      "timeline launch launch launch launch"
+      "timeline dt . mt ."
+      "timeline . cw cw ."
+      "timeline p4 p4 p4 p4"
+      "timeline mg mg . pm"
+      "timeline pi pi pi ."
+      "timeline pi pi pi ."
+      "timeline ff ff . ."
+      "timeline float float float ."
+      "timeline float float float ."
+      "timeline p5 p5 p5 p5"
+      "timeline st st . md"
+      "timeline v1 v1 . cd"
+      "timeline ms ms . ."
+      "timeline rs rs . v2"
+      "timeline rs rs . ."
+      "timeline sp sp sp sp"
+      "timeline sp sp sp sp"
+      "timeline sp sp sp sp"
+      "timeline sp sp sp sp"; */
+    }
+  }
