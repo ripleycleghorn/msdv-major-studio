@@ -9,17 +9,25 @@ body {
     padding: 10px;
     hyphens: auto;
     background-color: #dbdbdb;
-    margin-bottom: 10px;
+    margin: 20px;
 } 
 .heading {
     font-family: 'Source Code Pro', monospace;
     font-size: 24px;
     color: grey;
+    margin: 20px;
 }
 .background-large {
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     color: gray;
+    margin: 20px;
+}
+.background-small{
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  font-size: 14px;
+  margin: 20px;
 }
 .main {
     display: grid;
@@ -38,14 +46,14 @@ body {
      background: #F1F1F1;
   }
 img {
-    /* padding: 10px; */
+    /* margin: 10px; */
   }
 /* LANDING PAGE */
 
 .content-1977 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: .5fr .3fr 1fr .5fr;
+    grid-template-rows: .5fr .3fr 1fr .2fr;
   }
   
 .title {
@@ -66,12 +74,12 @@ img {
     grid-column: 5 / span 6;
     grid-row: 3 / 4;
   }
-/* PART ONE */
+/* PART ONE: EARLY LIFE */
 
 .content-1980 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: .3fr .5fr repeat(8, 1fr);
+    grid-template-rows: .3fr .5fr .5fr .5fr .5fr 1fr 1fr;
   }
 .part-one {
     grid-column: 4 / span 4;
@@ -91,22 +99,62 @@ img {
   }
 .chem {
     grid-column: 8 / span 2;
-    grid-row: 4 / 5;
-    font-family: 'Open Sans', sans-serif;
-    color: grey;
-    font-size: 14px;
+    grid-row: 3 / 5;
   }
 .apply {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 4;
     grid-row: 5 / 6;
   }  
 .news {
-    grid-column: 1 / span 3;
-    grid-row: 6 / 10;
+    grid-column: 1 / span 6;
+    grid-row: 6 / 8;
   } 
 
+/* PART TWO: TRAINING */
 
+.content-1983 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: .3fr .4fr .3fr .5fr .3fr .3fr .5fr .3fr .5fr .5fr;
+}
+.part-two {
+  grid-column: 4 / span 4;
+  grid-row: 1 / 2;
+}
+.interviews {
+  grid-column: 1 / span 4;
+  grid-row: 2 / 3;
+}
+.badge {
+  grid-column: 7 / span 4;
+  grid-row: 2 / 4;
+}
+.watch {
+  grid-column: 1 / span 4;
+  grid-row: 3 / 5;
+}
+.training {
+  grid-column: 6 / span 5;
+  grid-row: 4 / 5;
+}
+.mission-sequence-test {
+  grid-column: 1 / span 4;
+  grid-row: 6 / 7;
+}
+.helmet {
+  grid-column: 6 / span 4;
+  grid-row: 6 / 7;
+}
+.pre-launch {
+  grid-column: 1 / span 4;
+  grid-row: 7 / 8;
+  margin-top: 30px;
+}
+.t-38 {
+  grid-column: 1 / span 9;
+  grid-row: 8 / 10;
+}
 .content-section div {
-    /* border: 1px solid white; */
+    border: 1px solid white;
   }
   
