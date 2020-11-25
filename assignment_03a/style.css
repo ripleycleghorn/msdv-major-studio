@@ -5,11 +5,12 @@ body {
   }
 .body-text{
     font-family: Georgia;
-    font-size: 15px;
+    font-size: 16px;
     padding: 10px;
     hyphens: auto;
     background-color: #dbdbdb;
-    margin: 20px;
+    /* margin: 20px; */
+    padding: 15px;
 } 
 .heading {
     font-family: 'Source Code Pro', monospace;
@@ -34,20 +35,17 @@ body {
     grid-template-columns: 300px auto;
   }
 .timeline {
-    background: #F1F1F1;
     position: sticky;
     top: 0;
     height: 100vh; /*viewport height*/
-    color: black;
     font-family: 'Source Code Pro', monospace;
     color: teal;
+    background: #F1F1F1;
   }
 .content {
      background: #F1F1F1;
   }
-img {
-    /* margin: 10px; */
-  }
+
 /* LANDING PAGE */
 
 .content-1977 {
@@ -154,6 +152,124 @@ img {
   grid-column: 1 / span 9;
   grid-row: 8 / 10;
 }
+
+/* PART THREE: LAUNCH */
+
+.content-1989 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 950px;
+}
+
+/* PART FOUR: COMMUNICATION SATELLITES */
+
+.content-1990 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: .3fr .5fr 1fr 1fr .5fr repeat(2, 1fr);
+}
+.part-four {
+  grid-column: 2 / span 6;
+  grid-row: 1 / 2;
+}
+.palapa-text {
+  grid-column: 1 / span 5;
+  grid-row: 2 / 3;
+}
+.palapa-medal {
+  grid-column: 8 / 10;
+  grid-row: 2 / 3;
+}
+.palapa {
+  grid-column: 1 / 8;
+  grid-row: 3 / 5;
+}
+.quote-fun {
+  grid-column: 1 / 5;
+  grid-row: 5 / 6;
+}
+.sally-floating {
+  grid-column: 1 / 9;
+  grid-row: 6 / 8;
+}
+
+/* PART FIVE: SPAS */
+
+.content-1995 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: .5fr 1fr .3fr 1fr .5fr repeat(3, 1fr);
+}
+.part-five {
+  grid-column: 4 / span 4;
+  grid-row: 1 / 2;
+}
+.SPAS-text {
+  grid-column: 1 / span 6;
+  grid-row: 2 / 3;
+}
+.medallion {
+  grid-column: 8 / 10;
+  grid-row: 2 / 3;
+}
+.video-sample {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  background: navy;
+  color: white;
+}
+.control-deck {
+  grid-column: 7 / 10;
+  grid-row: 4 / 5;
+}
+.standing {
+  grid-column: 1 / 6;
+  grid-row: 6 / 8;
+}
+.video-spas {
+  grid-column: 6 / 10;
+  grid-row: 6 / 7;
+  background: navy;
+  color: white;
+}
+.mission-success {
+  grid-column: 6 / 10;
+  grid-row: 7 / 8;
+}
+
+/* LAST PAGE */
+
+.content-1998 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 950px;
+}
+
+/*** FULLSCREEN IMAGE THAT ALSO SPANS TIMELINE ***/
+
+.fullscreen-image {
+  position: relative;
+  /* overflow-y: hidden; */
+}
+.fullscreen-image img {
+  position: absolute;
+  min-width: 400px;
+  width: 100vw; /*viewport width*/
+  left: -300px;
+  z-index: 0;
+  /* height: auto; */
+}
+.fullscreen-image h1 {
+  position: absolute;
+  right: 0;
+  color: #fff;
+}
+
+
+
+
 .content-section div {
     border: 1px solid white;
   }
