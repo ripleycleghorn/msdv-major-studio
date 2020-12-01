@@ -33,22 +33,24 @@ body {
 .main {
     display: grid;
     grid-template-columns: 300px auto;
+    background: #F1F1F1;
   }
-.timeline {
+/* .timeline {
     position: sticky;
     top: 0;
-    height: 100vh; /*viewport height*/
+    height: 100vh;
     font-family: 'Source Code Pro', monospace;
     color: teal;
     background: #F1F1F1;
-  }
-.content {
+  } */
+
+/* .content {
      background: #F1F1F1;
-  }
+  } */
 
-/* LANDING PAGE */
+/* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */
 
-.content-1977 {
+.content-landing {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: .5fr .3fr 1fr .2fr;
@@ -74,7 +76,7 @@ body {
   }
 /* PART ONE: EARLY LIFE */
 
-.content-1980 {
+.content-1969 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: .3fr .5fr .5fr .5fr .5fr 1fr 1fr;
@@ -108,9 +110,9 @@ body {
     grid-row: 6 / 8;
   } 
 
-/* PART TWO: TRAINING */
+/* PART TWO: TRAINING */ /* PART TWO: TRAINING */ /* PART TWO: TRAINING */ /* PART TWO: TRAINING */ /* PART TWO: TRAINING */
 
-.content-1983 {
+.content-1978 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: .3fr .4fr .3fr .5fr .3fr .3fr .5fr .3fr .5fr .5fr;
@@ -153,21 +155,21 @@ body {
   grid-row: 8 / 10;
 }
 
-/* PART THREE: LAUNCH */
+/* PART THREE: LAUNCH */ /* PART THREE: LAUNCH */ /* PART THREE: LAUNCH */ /* PART THREE: LAUNCH */
 
-.content-1989 {
+.content-1983-launch {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   height: 950px;
 }
 
-/* PART FOUR: COMMUNICATION SATELLITES */
+/* PART FOUR: COMMUNICATION SATELLITES */ /* PART FOUR: COMMUNICATION SATELLITES */ /* PART FOUR: COMMUNICATION SATELLITES */
 
-.content-1990 {
+.content-1983-palapa {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: .3fr .5fr 1fr 1fr .5fr repeat(2, 1fr);
+  grid-template-rows: .3fr .5fr 1fr 1fr .5fr 1fr .5fr .5fr;
 }
 .part-four {
   grid-column: 2 / span 6;
@@ -194,12 +196,12 @@ body {
   grid-row: 6 / 8;
 }
 
-/* PART FIVE: SPAS */
+/* PART FIVE: SPAS */ /* PART FIVE: SPAS */ /* PART FIVE: SPAS */ /* PART FIVE: SPAS */ /* PART FIVE: SPAS */ /* PART FIVE: SPAS */
 
-.content-1995 {
+.content-1983-spas {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: .5fr 1fr .3fr 1fr .5fr repeat(3, 1fr);
+  grid-template-rows: .3fr 1fr .3fr 1fr .5fr 1fr .5fr .5fr 1fr;
 }
 .part-five {
   grid-column: 4 / span 4;
@@ -216,8 +218,6 @@ body {
 .video-sample {
   grid-column: 1 / 5;
   grid-row: 4 / 5;
-  background: navy;
-  color: white;
 }
 .control-deck {
   grid-column: 7 / 10;
@@ -225,7 +225,7 @@ body {
 }
 .standing {
   grid-column: 1 / 6;
-  grid-row: 6 / 8;
+  grid-row: 6 / 9;
 }
 .video-spas {
   grid-column: 6 / 10;
@@ -238,9 +238,9 @@ body {
   grid-row: 7 / 8;
 }
 
-/* LAST PAGE */
+/* LAST PAGE */ /* LAST PAGE */ /* LAST PAGE */ /* LAST PAGE */ /* LAST PAGE */ /* LAST PAGE */ /* LAST PAGE */ /* LAST PAGE */
 
-.content-1998 {
+.content-1983-floating {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -267,10 +267,105 @@ body {
   color: #fff;
 }
 
-
-
-
 .content-section div {
     border: 1px solid white;
-  }
+}
+
+/* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */
+
+.timeline {
+  /* position: relative; */
+  position: sticky;
+  margin: 0 auto;
+  width: 90%;
   
+}
+.timeline ul {
+  padding-inline-start: 5px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-bottom: 50px; */
+}
+
+.point {
+  min-width: 10px;
+  height: 10px;
+  background-color: #4172A5;
+  border-radius: 100%;
+  z-index: 2;
+  /* border: 3px #333333 solid; */
+  position: relative;
+  left: 8.5px;
+}
+
+.timeline ul li .event {
+  width: 50%;
+  padding: 10px 20px 0 0;
+}
+
+/* .timeline ul li:nth-child(odd) .event {
+  padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+  padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .event {
+  padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+  padding-left: 0;
+} */
+
+.timeline ul li .date {
+  width: 50%;
+  padding: 0 20px;
+  font-weight: normal;
+}
+
+.timeline ul li .date p {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14;
+  color: teal;
+  width: 50px;
+  text-align: center;
+  /* background-color: #e1ccec; */
+  /* padding: 5px 10px; */
+  /* border-radius: 10px; */
+}
+
+.timeline ul li .event p {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14;
+  color: grey;
+  margin-top: 0;
+  text-align: center;
+  /* padding: 10px 20px; */
+  /* background-color: #e1d9ec; */
+  /* border-bottom-left-radius: 10px; */
+  /* border-bottom-right-radius: 10px; */
+}
+
+/* .timeline ul li:nth-child(even) {
+  flex-direction: row-reverse;
+} */
+
+/* .timeline ul li:nth-child(even) .date p {
+  float: right
+} */
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 2px;
+  left: 50%;
+  background-color:grey;
+}
