@@ -27,22 +27,15 @@ body {
 .background-small{
   font-family: 'Playfair Display', serif;
   color: grey;
-  font-size: 14px;
-  margin: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+  /* margin: 20px; */
 }
 .main {
     display: grid;
     grid-template-columns: 300px auto;
     background: #F1F1F1;
   }
-/* .timeline {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    font-family: 'Source Code Pro', monospace;
-    color: teal;
-    background: #F1F1F1;
-  } */
 
 /* .content {
      background: #F1F1F1;
@@ -269,15 +262,26 @@ body {
     /* border: 1px solid white; */
 }
 
+/* .timeline {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+    color: teal;
+    background: #F1F1F1;
+  } */
+
 /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */
 
 .timeline {
   /* position: relative; */
   position: sticky;
   margin: 0 auto;
-  width: 90%;
-  
+  height: 100vh;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12;
 }
+
 .timeline ul {
   padding-inline-start: 5px;
 }
@@ -296,7 +300,6 @@ body {
   background-color: #4172A5;
   border-radius: 100%;
   z-index: 2;
-  /* border: 3px #333333 solid; */
   position: relative;
   left: 8.5px;
 }
@@ -329,26 +332,15 @@ body {
 }
 
 .timeline ul li .date p {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 14;
   color: teal;
   width: 50px;
   text-align: center;
-  /* background-color: #e1ccec; */
-  /* padding: 5px 10px; */
-  /* border-radius: 10px; */
 }
 
 .timeline ul li .event p {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 14;
   color: grey;
   margin-top: 0;
   text-align: center;
-  /* padding: 10px 20px; */
-  /* background-color: #e1d9ec; */
-  /* border-bottom-left-radius: 10px; */
-  /* border-bottom-right-radius: 10px; */
 }
 
 /* .timeline ul li:nth-child(even) {
@@ -365,5 +357,5 @@ body {
   height: 100vh;
   width: 2px;
   left: 50%;
-  background-color:grey;
+  background-color: #B2B2B2;
 }
