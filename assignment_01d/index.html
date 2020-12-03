@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Quipu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
 </head>
-<body>
-  <!-- placeholder divs -->
-  <div id="grid-container-1">
-    <div id="title">
-      <h1> Counting Quipu <br><i>The Ancient Data Collecting Devices</i></h1>
-    </div>
-    <div id="context">
-      <h3>Background</h3>
-      <p><i>Quipu</i> (also written <i>Khipu</i>) were an ancient record keeping device created in Central and South America by indigenous Andeans, prior to Spanish colonization. They were made up of one main cord with many connecting pendant cords that contained knots. Pendant cords also sometimes contained subsidiary cords (denoted by an 's') that had their own knots. The number and placement of knots determined the value stored in that cord. Color and texture of the cord defined the types of information being counted. <i>Quipu</i> were often carried from region to region by a <i>Chasqui</i>, or messenger, in order to spread information or to continue collecting data. Though they are mainly associated with the Inca civilization due to their widespread use, they were used long before them.</p>
-    </div>
-    <div id="legend">
-      <img src="knot.png" alt="" width="98%" height="auto">
-    </div>
-    <div id="visual">
-      <img src="quipu.png" alt="" width="100%" height="auto">
-    </div>
-    <div id="paragraph">
-      <h3>What Kinds of Data Did They Collect?</h3>
-      <p>Although the method of counting on a <i>quipu</i> has been mostly decoded, it remains one of the few verifiable facts. Specifically, what was actually being counted is largely a mystery. Despite that, some <i>quipu</i> values have been found to exactly match Spanish census documents from the same regions and times. And one discovery has tied the social rankings of the people recorded in the census document to correspond to the way each cord was tied to the <i>quipu</i>. Other <i>quipu</i> used by the Incas seem to point to keeping track of who had paid "taxes" of food, livestock, and other goods. Still more theories include recording planetary movement and seasons, months and days. <br><br>An absence of a knot indicates the number zero; the native South and Central Americans are considered to be some of the first known civilizations to represent the concept of zero.</p>
-    </div>
-    <div id="images">
-      <a target="_blank" href="images/quipu.jpg">
-        <img src="images/quipu.jpg" alt="" width="30%" height="auto">
-      </a>
-      <a target="_blank" href="images/other.jpg">
-        <img src="images/other.jpg" alt="" width="30%" height="auto">
-      </a>
-      <a target="_blank" href="images/zoom.jpg">
-        <img src="images/zoom.jpg" alt="" width="30%" height="auto">
-      </a>
-    </div>
-    <div id="footer">
-      <h3>References</h3>
-      <p>https://www.discovermagazine.com/planet-earth/the-inka-empire-recorded-their-world-in-knotted-cords-called-khipu <br>https://u.osu.edu/svoboda.33/quipus</p>
-      <!-- <p>https://u.osu.edu/svoboda.33/quipus</p><br> -->
-      <p><i>This object is UR#1034 of the Khipu Database Project</i></p>
-      <p><i>Visualization and website by Ripley Cleghorn</i></p>
-      <!-- <p><i>Smithsonian Open Access API</i></p> -->
-    </div>
 
-  </div>
+<body>
+    <div id="grid-container-1">
+      <div id="title">
+        <h1> Counting Quipu <br><i>The Ancient Data Collecting Devices</i></h1>
+      </div>
+      <div id="context">
+        <h3>Background</h3>
+        <p><i>Quipu</i> (also written <i>Khipu</i>) were an ancient record keeping device created in Central and South
+          America by indigenous Andeans, prior to Spanish colonization. They were made up of one main cord with many
+          connecting pendant cords that contained knots. Pendant cords also sometimes contained subsidiary cords (denoted
+          by an 's') that had their own knots. The number and placement of knots determined the value stored in that cord.
+          Color and texture of the cord defined the types of information being counted. <i>Quipu</i> were often carried
+          from region to region by a <i>Chasqui</i>, or messenger, in order to spread information or to continue
+          collecting data. Though they are mainly associated with the Inca civilization due to their widespread use, they
+          were used long before them.</p>
+      </div>
+      <div id="legend">
+        <img src="knot.png" alt="" width="98%" height="auto">
+      </div>
+      <div id="visual" class="img-magnifier-container">
+        <img id="myimage" src="quipu.png" alt="" width="1200" height="800">
+      </div>
+      <div id="paragraph">
+        <h3>What Kinds of Data Did They Collect?</h3>
+        <p>Although the method of counting on a <i>quipu</i> has been mostly decoded, it remains one of the few verifiable
+          facts. Specifically, what was actually being counted is largely a mystery. Despite that, some <i>quipu</i>
+          values have been found to exactly match Spanish census documents from the same regions and times. And one
+          discovery has tied the social rankings of the people recorded in the census document to correspond to the way
+          each cord was tied to the <i>quipu</i>. Other <i>quipu</i> used by the Incas seem to point to keeping track of
+          who had paid "taxes" of food, livestock, and other goods. Still more theories include recording planetary
+          movement and seasons, months and days. <br><br>An absence of a knot indicates the number zero; the native South
+          and Central Americans are considered to be some of the first known civilizations to represent the concept of
+          zero.</p>
+      </div>
+      <div id="images">
+        <a target="_blank" href="images/quipu.jpg">
+          <img src="images/quipu.jpg" alt="" width="30%" height="auto">
+        </a>
+        <a target="_blank" href="images/other.jpg">
+          <img src="images/other.jpg" alt="" width="30%" height="auto">
+        </a>
+        <a target="_blank" href="images/zoom.jpg">
+          <img src="images/zoom.jpg" alt="" width="30%" height="auto">
+        </a>
+      </div>
+      <div id="footer">
+        <h3>References</h3>
+        <p>
+          https://www.discovermagazine.com/planet-earth/the-inka-empire-recorded-their-world-in-knotted-cords-called-khipu
+          <br>https://u.osu.edu/svoboda.33/quipus</p>
+        <p><i>This object is UR#1034 of the Khipu Database Project</i></p>
+        <p><i>Visualization and website by Ripley Cleghorn</i></p>
+      </div>
+    </div>
+    <script>
+      /* Execute the magnify function: */
+      magnify("myimage", 3);
+      /* Specify the id of the image, and the strength of the magnifier glass: */
+  </script>
 </body>
 </html>
+<!-- <p>https://u.osu.edu/svoboda.33/quipus</p><br> -->
+<!-- <p><i>Smithsonian Open Access API</i></p> -->

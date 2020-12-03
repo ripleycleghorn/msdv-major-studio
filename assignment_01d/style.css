@@ -1,10 +1,28 @@
+/* MAGNIFYING GLASS */
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #999;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+/* OLD STUFF */
+
 body {
-  /* margin: 10; */
   color: #4C4C4C;
   background-color: black;
 }
 
-/* using grid template areas!! */
 #grid-container-1 {
   width: 400px;
   display: grid;
@@ -21,7 +39,6 @@ body {
 }
 
 #title {
-  /* background: olivedrab; */
   grid-area: title;
   color: #457b9d;
   padding-left: 10px;
