@@ -276,7 +276,6 @@ color: #fff;
 /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */
 
 .timeline {
-/* position: relative; */
 position: sticky;
 margin: 0 auto;
 height: 100vh;
@@ -298,7 +297,6 @@ align-items: center;
 /* transition: transform 0.2s; */
 }
 
-
 .point {
 min-width: 10px;
 height: 10px;
@@ -309,37 +307,22 @@ position: relative;
 left: 8.5px;
 }
 
-.timeline ul li .event {
+.event {
 width: 50%;
 padding: 10px 20px 0 0;
 }
 
-.timeline ul li .date {
+.date {
 width: 50%;
 padding: 0 20px;
 font-weight: normal;
 }
 
-.timeline ul li .date p {
+.date p {
 width: 50px;
 text-align: center;
 color: #999;
 /* transition: color 0.3s; */
-}
-
-.timeline li.active .date p {
-  color: teal;
-}
-
-.timeline li.active .point {
-  background-color: #4172A5;
-}
-
-
-.timeline ul li:hover p {
-/* color: red; */
-cursor: pointer;
-transform: translateX(10px)
 }
 
 .timeline ul li .event p {
@@ -355,4 +338,26 @@ height: 100vh;
 width: 2px;
 left: 50%;
 background-color: #B2B2B2;
+}
+
+/* ON HOVER */ /* ON HOVER */ /* ON HOVER */ /* ON HOVER */ /* ON HOVER */ /* ON HOVER */ /* ON HOVER */ /* ON HOVER */
+
+.timeline ul li:hover p {
+  /* color: red; */
+  cursor: pointer;
+  transform: translateX(10px)
+  }
+  
+
+/* ACTIVE ATTRIBUTES */ /* ACTIVE ATTRIBUTES */ /* ACTIVE ATTRIBUTES */ /* ACTIVE ATTRIBUTES */ /* ACTIVE ATTRIBUTES */
+
+.timeline li.active .date p {
+  color: teal;
+}
+
+.timeline li.active .point {
+  background-color: #4172A5;
+}
+.timeline li.active .event p {
+  color: teal;
 }
