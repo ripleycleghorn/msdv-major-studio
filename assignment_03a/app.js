@@ -3,7 +3,6 @@ const contentSections = document.querySelectorAll(".content-section")
 
 /*** UPDATE TIMELINE AS THE USER SCROLLS ***/
 window.addEventListener("scroll", () => {
-
   //reset active status on all timeline elements
   timelineNodes.forEach(node => {
     if (node.classList.contains("active")) {
@@ -45,3 +44,52 @@ timelineNodes.forEach(node => {
     console.log(year)
   })
 })
+
+window.addEventListener("DOMContentLoaded", () => {
+  distributeTimelineItems()
+})
+
+
+window.addEventListener("resize", () => {
+  distributeTimelineItems()
+})
+
+
+
+/*** PROGRAMMATICALLY SET TIMELINE ITEM GAPS ***/
+function distributeTimelineItems() {
+  const timelineUL = document.querySelector(".timeline ul")
+  const baseHeight = timelineUL.offsetHeight;
+  let listItemHeights = 0;
+  //get all the heights
+  const timelineItems = document.querySelectorAll(".timeline li")
+  timelineItems.forEach(listItem => {
+    listItemHeights += listItem.offsetHeight;
+  })
+
+  const spaceToDistribute = baseHeight - listItemHeights;
+  const baseGap = spaceToDistribute / 60;
+
+  //loop through each timeline item
+  for (let i = 0; i < timelineItems.length - 1; i++) {
+    let thisNode = timelineItems[i];
+    let nextNode = timelineItems[i + 1];
+    let thisYear = getTimelineYear(thisNode);
+    let nextYear = getTimelineYear(nextNode);
+
+    let yearGap = nextYear - thisYear;
+
+    let margin = yearGap * baseGap;
+
+    //set the margin on the element
+    thisNode.style.marginBottom = `${margin}px`;
+
+  }
+
+  function getTimelineYear(timelineItems) {
+    let year = timelineItems.querySelector(".date").innerText;
+    return parseInt(year)
+  }
+}
+
+

@@ -26,6 +26,7 @@ body {
 	hyphens: auto;
 	padding: 20px 20px 20px 0px;
 	margin: 20px 20px 20px 0px;
+	color: white;
 }
 
 .caption {
@@ -46,7 +47,7 @@ body {
 .heading {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 24px;
-	/* color: grey; */
+	color: #69a2ad;
 }
 
 .background-large {
@@ -69,7 +70,7 @@ body {
 .main {
 	display: grid;
 	grid-template-columns: 300px auto;
-	background: #ffffff;
+	background: black;
 }
 
 /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */
@@ -86,6 +87,7 @@ body {
 	grid-column: 5 / span 5;
 	grid-row: 1 / 2;
 	margin-top: 20px;
+	color: white;
 }
 
 .rocket {
@@ -454,14 +456,18 @@ body {
 
 /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */ /* NEW TIMELINE CONTENT */
 
-/* .timeline-name {
+.timeline-name {
 	position: sticky;
-	text-align: center;
+	text-align: left;
 	font-family: 'Source Code Pro', monospace;
-	font-size: 12;
-  z-index: 1;
-  color: grey;
-} */
+	font-size: 14px;
+  z-index: 5;
+  color: white;
+  padding-top: 2.5vh;
+  /* background: #fff; */
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
 
 
 .timeline {
@@ -469,13 +475,20 @@ body {
 	margin: 0 auto;
 	height: 100vh;
 	font-family: 'Source Code Pro', monospace;
-	font-size: 12;
+	font-size: 12px;
 	top: 0;
-	z-index: 1;
+	  z-index: 1;
+	  /* background-color: black; */
 }
 
 .timeline ul {
-	padding-inline-start: 5px;
+  padding-inline-start: 5px;
+  height: 90vh;
+  /* margin-top: 5vh; */
+  display: flex; 
+  flex-direction: column;
+  /* justify-content: space-between; */
+
 }
 
 .timeline ul li {
@@ -543,6 +556,7 @@ body {
 .timeline li.active .date p {
 	font-weight: 700;
 	font-style: italic;
+	color: white;
 }
 
 .timeline li.active .point {
@@ -552,7 +566,7 @@ body {
 .timeline li.active .event p {
 	font-weight: 700;
 	font-style: italic;
-	/* color: white; */
+	color: white;
 }
 
 /* .timeline li.active .event{
