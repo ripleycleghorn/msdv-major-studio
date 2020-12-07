@@ -332,18 +332,23 @@ body {
 .content-1984 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 50px 1fr;
+}
+
+.post-mission {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
 }
 
 .STS-41G {
   grid-column: 1 / 5;
-  grid-row: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .content-1985 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 1fr;
 }
 
 .next-mission {
@@ -351,32 +356,21 @@ body {
   grid-row: 1 / 2;
 }
 
-/* .content-1986 {
+.content-1986 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 1fr;
 }
 
-.challenger-explosion {
+.ride-report {
   grid-column: 1 / 5;
   grid-row: 1 / 2;
 }
-
-.content-1987 {
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-}
-
-.investigation {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
-} */
 
 .content-1989 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 1fr;
 }
 
 .professor {
@@ -387,34 +381,34 @@ body {
 .content-2001 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 1fr;
 }
 
 .science {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
 }
+
+.educator {
+	grid-column: 6 / 9;
+	grid-row: 1 / 2;
+  }
 
 .content-2012 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: 1fr 50px;
 }
 
 .cancer {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
 }
 
-.content-2013 {
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-}
-
-.medal {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+.freedom {
+	grid-column: 5 / 10;
+	grid-row: 1 / 2;
+	align-self: center;
 }
 
 
