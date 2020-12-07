@@ -394,7 +394,7 @@ body {
 	grid-row: 1 / 2;
   }
 
-.content-2012 {
+.content-2013 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
 	grid-template-rows: 1fr 50px;
@@ -543,7 +543,6 @@ body {
 .timeline li.active .date p {
 	font-weight: 700;
 	font-style: italic;
-	color: #69a2ad;
 }
 
 .timeline li.active .point {
@@ -553,5 +552,9 @@ body {
 .timeline li.active .event p {
 	font-weight: 700;
 	font-style: italic;
-	color: #69a2ad;
+	/* color: white; */
 }
+
+/* .timeline li.active .event{
+	background-color: black;
+} */
