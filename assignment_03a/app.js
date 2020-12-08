@@ -68,7 +68,8 @@ function distributeTimelineItems() {
   })
 
   const spaceToDistribute = baseHeight - listItemHeights;
-  const baseGap = spaceToDistribute / 60;
+  const baseGap = spaceToDistribute / 44;
+  // difference between start and end year is 44 years
 
   //loop through each timeline item
   for (let i = 0; i < timelineItems.length - 1; i++) {

@@ -419,21 +419,21 @@ body {
 }
 
 .content-1983-floating {
-  height: 100vw;
+	height: 100vw;
   /* margin-bottom: 300px; */
 }
 
-.fullscreen-image {
-  position: relative;
+.fullscreen-image {	
+	position: relative;
 	/* overflow-y: hidden; */
 }
 
 .fullscreen-image img {
-  position: absolute;
-  min-width: 400px;
-  width: 100vw; /*viewport width*/
-  left: -300px;
-  z-index: 0;
+	position: absolute;
+	min-width: 400px;
+	width: 100vw; /*viewport width*/
+	left: -300px;
+	z-index: 0;
 }
 
 .fullscreen-image h1 {
@@ -450,11 +450,11 @@ body {
 	text-align: left;
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
-  z-index: 5;
-  color: white;
-  padding-top: 2.5vh;
-  padding-bottom: 10px;
-  padding-left: 40px;
+	z-index: 5;
+	color: white;
+	padding-top: .5vh;
+	/* padding-bottom: 10px; */
+	padding-left: 40px;
 }
 
 
@@ -465,12 +465,12 @@ body {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 12px;
 	top: 0;
-	  z-index: 1;
+	z-index: 1;
 }
 
 .timeline ul {
   padding-inline-start: 5px;
-  height: 90vh;
+  height: 95vh;
   display: flex; 
   flex-direction: column;
 
