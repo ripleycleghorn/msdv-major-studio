@@ -26,7 +26,7 @@ body {
 	hyphens: auto;
 	padding: 20px 20px 20px 0px;
 	margin: 20px 20px 20px 0px;
-	color: white;
+	/* color: white; */
 }
 
 .caption {
@@ -53,7 +53,7 @@ body {
 .background-large {
 	font-family: 'Playfair Display', serif;
 	font-size: 18px;
-	color: #f3f3f3;
+	background-color: #f3f3f3;
 	border-left: 3px solid #69a2ad;
 	padding: 20px;
 	margin: 80px 0;
@@ -70,7 +70,7 @@ body {
 .main {
 	display: grid;
 	grid-template-columns: 300px auto;
-	background: black;
+	background: white;
 }
 
 /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */ /* LANDING PAGE */
@@ -87,7 +87,7 @@ body {
 	grid-column: 5 / span 5;
 	grid-row: 1 / 2;
 	margin-top: 20px;
-	color: white;
+	/* color: white; */
 }
 
 .rocket {
@@ -147,21 +147,21 @@ body {
 }
 
 .thumbnail-news:hover {
-  transform: scale(5); 
+  	transform: scale(5); 
 }
 
 .thumbnail-watch:hover {
-  transform: scale(2); 
+  	transform: scale(2); 
 }
 
 .news {
-  grid-column: 1 / span 5;
-  grid-row: 6 / 8;
+	grid-column: 1 / span 5;
+	grid-row: 6 / 8;
 }
 
 .news2 {
-  grid-column: 6 / 7;
-  grid-row: 6 / 8;
+	grid-column: 6 / 7;
+	grid-row: 6 / 8;
 }
 
 /* PART TWO: TRAINING */ /* PART TWO: TRAINING */ /* PART TWO: TRAINING */ /* PART TWO: TRAINING */
@@ -227,12 +227,12 @@ body {
   }
 
 .exhilirating {
-  grid-column: 1 / span 3;
-  grid-row: 2 / 3;
+	grid-column: 1 / span 3;
+	grid-row: 2 / 3;
 }
 
 .crew-image {
-  grid-column: 1 / 10;
+  	grid-column: 1 / 10;
 	grid-row: 3 / 5;
 }
 
@@ -328,13 +328,13 @@ body {
 }
 
 .post-mission {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
-}
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+	}
 
 .STS-41G {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
+	grid-column: 1 / 5;
+	grid-row: 2 / 3;
 }
 
 .content-1985 {
@@ -344,8 +344,8 @@ body {
 }
 
 .next-mission {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
 }
 
 .content-1986 {
@@ -355,8 +355,8 @@ body {
 }
 
 .ride-report {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
 }
 
 .content-1989 {
@@ -366,8 +366,8 @@ body {
 }
 
 .professor {
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
 }
 
 .content-2001 {
@@ -451,7 +451,7 @@ body {
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
 	z-index: 5;
-	color: white;
+	/* color: white; */
 	padding-top: .5vh;
 	/* padding-bottom: 10px; */
 	padding-left: 40px;
@@ -469,10 +469,10 @@ body {
 }
 
 .timeline ul {
-  padding-inline-start: 5px;
-  height: 95vh;
-  display: flex; 
-  flex-direction: column;
+	padding-inline-start: 5px;
+	height: 95vh;
+	display: flex; 
+	flex-direction: column;
 
 }
 
@@ -541,7 +541,7 @@ body {
 .timeline li.active .date p {
 	font-weight: 700;
 	font-style: italic;
-	color: white;
+	color: #69a2ad;
 }
 
 .timeline li.active .point {
@@ -551,5 +551,5 @@ body {
 .timeline li.active .event p {
 	font-weight: 700;
 	font-style: italic;
-	color: white;
+	color: #69a2ad;
 }
