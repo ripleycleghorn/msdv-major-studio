@@ -402,6 +402,23 @@ body {
 	grid-row: 3 / 5;
 }
 
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+
+.footer {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 1fr;
+}
+
+.smithsonian {
+	grid-column: 9 / 11;
+	grid-row: 1 / 2;
+}
+
+.NASA {
+	grid-column: 7 /  9;
+	grid-row: 1 / 2;
+}
 
 /*** FULLSCREEN IMAGE THAT ALSO SPANS TIMELINE ***/
 
