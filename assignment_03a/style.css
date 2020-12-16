@@ -78,7 +78,7 @@ body {
 .content-1951 {
 	display: grid;
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: .3fr .2fr 1fr 100px;
+	grid-template-rows: .3fr .1fr .1fr 100px;
 }
 
 .title {
